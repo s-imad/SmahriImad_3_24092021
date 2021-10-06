@@ -7,25 +7,26 @@ body{
     margin-right: auto;
     margin-bottom: 25px;
     margin-top: 25px;
-    height: 6rem;
-    width: 30rem;
+    height: 2rem;
+    width: 10rem;
 }
+/*
 h1{
     font-size: 3rem;
 }
+*/
 .location{
     box-shadow: inset 0px 4px 5px 1px grey;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: lightgray;
+    padding: 15px;
+    background-color: #f3f3f3;
     font-size: 16px;
 }
 .explore{
     text-align: center;
-    background-color: lightpink;
-    padding-top: 80px;
-    padding-bottom: 160px;
+    background-color: #fafafa;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .explore p{
     font-weight: 100;
@@ -37,13 +38,12 @@ h1{
     cursor: pointer;
     color: white;
     border: none;
-    font-size: 2.5rem;
-    padding: 50px;
-    margin-top: 30px;
+    font-size: 1rem;
+    padding: 15px;
 }
 .function{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .option1, .option2, .option3{
     background-color: #f7f7f7;
@@ -72,6 +72,56 @@ h1{
     font-weight: 600;
     padding-left: 10px;
 }
-img{
-    height: 10rem;
+.result-box{
+    background-color: #f7f7f7;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.box1, .box2, .box3, .box4{
+    background-color: white;
+    /*max-width: 510px;*/
+    border-radius: 1rem;
+    padding-bottom: 5px;
+    margin: 15px;
+}
+.box1 img, .box2 img, .box3 img, .box4 img{
+    height: 12rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    width: 100%;
+}
+.result-box a:hover{
+    transform: scale(1.05);
+}
+.box-txt{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer img{
+    margin-left: 25px;
+    margin-right: auto;
+    margin-top: 25px;
+    height: 2rem;
+    width: 15rem;
+    color: #fff;
+}
+footer{
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+}
+.footernav a{
+    color: white;
+    text-decoration: none;
+}
+.footernav ul{
+    list-style: none;
+}
+.footer-ico{
+    margin-right: 4px;
+    width: 1.2rem;
 }
