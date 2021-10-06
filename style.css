@@ -1,5 +1,31 @@
+/* -------------------------------POLICE ROBOTO------------------------------- */
+@font-face {
+    font-family: roboto;
+    src: url(police/roboto/Roboto-Black.ttf);
+    src: url(police/roboto/Roboto-BlackItalic.ttf);
+    src: url(police/roboto/Roboto-Bold.ttf);
+    src: url(police/roboto/Roboto-BoldCondensed.ttf);
+    src: url(police/roboto/Roboto-BoldCondensedItalic.ttf);
+    src: url(police/roboto/Roboto-BoldItalic.ttf);
+    src: url(police/roboto/Roboto-Condensed.ttf);
+    src: url(police/roboto/Roboto-CondensedItalic.ttf);
+    src: url(police/roboto/Roboto-Italic.ttf);
+    src: url(police/roboto/Roboto-Light.ttf);
+    src: url(police/roboto/Roboto-LightItalic.ttf);
+    src: url(police/roboto/Roboto-Medium.ttf);
+    src: url(police/roboto/Roboto-MediumItalic.ttf);
+    src: url(police/roboto/Roboto-Regular.ttf);
+    src: url(police/roboto/Roboto-Thin.ttf);
+    src: url(police/roboto/Roboto-ThinItalic.ttf);
+}
+/* -------------------------------POLICE SHRIKHAND------------------------------- */
+@font-face {
+    font-family: shrikhand;
+    src: url(police/shrikhand/Shrikhand-Regular.otf);
+}
 body{
     margin: 0px;
+    font-family: roboto,"black";
 }
 .logo img{
     display: block;
@@ -41,6 +67,10 @@ h1{
     font-size: 1rem;
     padding: 15px;
 }
+.tuto{
+    max-width: 1200px;
+    margin: auto;
+}
 .function{
     display: flex;
     justify-content: space-around;
@@ -72,12 +102,22 @@ h1{
     font-weight: 600;
     padding-left: 10px;
 }
-.result-box{
+main{
     background-color: #f7f7f7;
+
+}
+.restaurant{
+    max-width: 1200px;
+    margin: auto;
+}
+.result-box{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 2rem;
     row-gap: 2rem;
+}
+.result-box a{
+    text-decoration: none;
 }
 .box1, .box2, .box3, .box4{
     background-color: white;
@@ -88,7 +128,8 @@ h1{
 }
 .box1 img, .box2 img, .box3 img, .box4 img{
     height: 12rem;
-    border-radius: 1rem;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
     object-fit: cover;
     width: 100%;
 }
@@ -100,14 +141,25 @@ h1{
     align-items: center;
     padding: 1rem;
 }
-
-footer img{
+.box-name{
+    flex: 1;
+}
+.box-name h3{
+    margin: 0px;
+}
+/*footer img{
     margin-left: 25px;
     margin-right: auto;
     margin-top: 25px;
     height: 2rem;
     width: 15rem;
     color: #fff;
+}*/
+.footerlogo{
+    color: #fff;
+    font-family: Shrikhand,"cursive";
+    font-size: 1.2rem;
+    margin: 0px 40px 0px;
 }
 footer{
     background-color: #353535;
