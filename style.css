@@ -23,10 +23,12 @@
     font-family: shrikhand;
     src: url(police/shrikhand/Shrikhand-Regular.otf);
 }
+/* -------------------------------BODY------------------------------- */
 body{
     margin: 0px;
     font-family: roboto,"black";
 }
+/* -------------------------------HEADER------------------------------- */
 .logo img{
     display: block;
     margin-left: auto;
@@ -67,6 +69,7 @@ h1{
     font-size: 1rem;
     padding: 15px;
 }
+/* -------------------------------NAV------------------------------- */
 .tuto{
     max-width: 1200px;
     margin: auto;
@@ -102,6 +105,7 @@ h1{
     font-weight: 600;
     padding-left: 10px;
 }
+/* -------------------------------MAIN------------------------------- */
 main{
     background-color: #f7f7f7;
 
@@ -147,6 +151,7 @@ main{
 .box-name h3{
     margin: 0px;
 }
+/* -------------------------------FOOTER------------------------------- */
 /*footer img{
     margin-left: 25px;
     margin-right: auto;
@@ -177,3 +182,27 @@ footer{
     margin-right: 4px;
     width: 1.2rem;
 }
+/* -------------------------------MEDIA------------------------------- */
+@media (max-width: 1200px){
+    .tuto{
+        text-align: center;
+    }
+    .function{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+    .restaurant{
+        text-align: center;
+    }
+}
+@media (max-width: 998px){
+    .result-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 2rem;
+    }
+}
+    
