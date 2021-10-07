@@ -1,0 +1,80 @@
+/* -------------------------------POLICE ROBOTO------------------------------- */
+@font-face {
+    font-family: roboto;
+    src: url(police/roboto/Roboto-Black.ttf);
+    src: url(police/roboto/Roboto-BlackItalic.ttf);
+    src: url(police/roboto/Roboto-Bold.ttf);
+    src: url(police/roboto/Roboto-BoldCondensed.ttf);
+    src: url(police/roboto/Roboto-BoldCondensedItalic.ttf);
+    src: url(police/roboto/Roboto-BoldItalic.ttf);
+    src: url(police/roboto/Roboto-Condensed.ttf);
+    src: url(police/roboto/Roboto-CondensedItalic.ttf);
+    src: url(police/roboto/Roboto-Italic.ttf);
+    src: url(police/roboto/Roboto-Light.ttf);
+    src: url(police/roboto/Roboto-LightItalic.ttf);
+    src: url(police/roboto/Roboto-Medium.ttf);
+    src: url(police/roboto/Roboto-MediumItalic.ttf);
+    src: url(police/roboto/Roboto-Regular.ttf);
+    src: url(police/roboto/Roboto-Thin.ttf);
+    src: url(police/roboto/Roboto-ThinItalic.ttf);
+}
+/* -------------------------------POLICE SHRIKHAND------------------------------- */
+@font-face {
+    font-family: shrikhand;
+    src: url(police/shrikhand/Shrikhand-Regular.otf);
+}
+/* -------------------------------BODY------------------------------- */
+body{
+    margin: 0px;
+    font-family: roboto,"black";
+}
+/* -------------------------------HEADER------------------------------- */
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    height: 2rem;
+    width: 10rem;
+}
+.banniere{
+    max-width: 100%;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    /* position: absolute; */
+}
+/* -------------------------------MAIN------------------------------- */
+
+/* -------------------------------FOOTER------------------------------- */
+/*footer img{
+    margin-left: 25px;
+    margin-right: auto;
+    margin-top: 25px;
+    height: 2rem;
+    width: 15rem;
+    color: #fff;
+}*/
+.footerlogo{
+    color: #fff;
+    font-family: Shrikhand,"cursive";
+    font-size: 1.2rem;
+    margin: 0px 40px 0px;
+}
+footer{
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+}
+.footernav a{
+    color: white;
+    text-decoration: none;
+}
+.footernav ul{
+    list-style: none;
+}
+.footer-ico{
+    margin-right: 4px;
+    width: 1.2rem;
+}
