@@ -26,7 +26,7 @@
 /* -------------------------------BODY------------------------------- */
 body{
     margin: 0px;
-    font-family: roboto,"black";
+    /*font-family: roboto;*/
 }
 /* -------------------------------HEADER------------------------------- */
 .logo img{
@@ -118,7 +118,13 @@ main{
 .restaurant{
     max-width: 1200px;
     margin: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 20px;
 }
+/*.restaurant h2{
+    padding-top: 50px;
+}*/
 .result-box{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -161,7 +167,9 @@ main{
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #f7f7f7;
+    background-color: #99E2D0;
+    color: red;
+    padding: 5px;
 }
 /* -------------------------------FOOTER------------------------------- */
 /*footer img{
@@ -174,9 +182,9 @@ main{
 }*/
 .footerlogo{
     color: #fff;
-    font-family: "Shrikhand", cursive;
+    font-family: Shrikhand, cursive;
     font-size: 1.2rem;
-    margin: 0px 40px 0px;
+    margin: 20px 40px 0px;
 }
 footer{
     background-color: #353535;
@@ -215,6 +223,17 @@ footer{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         row-gap: 2rem;
+    }    
+}
+@media (max-width: 500px){
+    .option1, .option2, .option3{
+        max-width: 260px;
+    }
+    .tuto{
+        text-align: start;
+    }
+    .restaurant{
+        text-align: start;
     }
 }
     
