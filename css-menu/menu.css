@@ -1,6 +1,6 @@
 /* -------------------------------POLICE ROBOTO------------------------------- */
 @font-face {
-    font-family: roboto;
+    font-family: "Roboto";
     src: url(police/roboto/Roboto-Black.ttf);
     src: url(police/roboto/Roboto-BlackItalic.ttf);
     src: url(police/roboto/Roboto-Bold.ttf);
@@ -63,11 +63,19 @@ main{
     position: relative;
     border-radius: 30px 30px 0px 0px;
 }
+.empty{
+    font-size: 1.75rem;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
 .menu-title{
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: Shrikhand,"cursive";
+    font-size: 1.2rem;
+    padding: 10px;
 }
 .menu-bloc{
     display: grid;
@@ -76,6 +84,9 @@ main{
 }
 main h3{
     padding: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
 }
 /*main h4{
     margin-bottom: 0px;
@@ -87,14 +98,11 @@ main h3{
     align-items: end;
     background-color: #fff;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 1rem;
     margin: 10px;
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
     cursor: pointer;
     /*transform: scale(1.05); :HOVER*/
-}
-.type1:hover{
-    transform: scale(1.05);
 }
 .type1-txt{
     margin: 10px;
@@ -110,14 +118,18 @@ main h3{
     padding: 30px;
 }
 .menu-btn{
-    background-color: #0065FC;
+    background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
     border-radius: 60px 60px 60px 60px;
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
     cursor: pointer;
     color: white;
     border: none;
     font-size: 1rem;
     padding: 15px;
     width: 200px;
+}
+.menu-btn:hover{
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 50%);
 }
 /* -------------------------------FOOTER------------------------------- */
 /*footer img{
