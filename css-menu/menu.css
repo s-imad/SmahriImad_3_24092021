@@ -83,10 +83,13 @@ main{
     column-gap: 1rem;
 }
 main h3{
-    padding: 25px;
     font-weight: 300;
     text-transform: uppercase;
     position: relative;
+    border-bottom: solid #99E2D0;
+    max-width: 45px;
+    margin-left: 15px;
+    padding-bottom: 8px;
 }
 /*main h4{
     margin-bottom: 0px;
@@ -112,6 +115,10 @@ main h3{
 }
 .price{
     margin: 10px;
+}
+.check{
+    font-size: 25px;
+    color: white;
 }
 .menu-bloc-btn{
     text-align: center;
