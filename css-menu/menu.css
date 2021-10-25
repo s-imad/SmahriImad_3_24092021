@@ -1,23 +1,4 @@
-/* -------------------------------POLICE ROBOTO------------------------------- */
-@font-face {
-    font-family: "Roboto";
-    src: url(police/roboto/Roboto-Black.ttf);
-    src: url(police/roboto/Roboto-BlackItalic.ttf);
-    src: url(police/roboto/Roboto-Bold.ttf);
-    src: url(police/roboto/Roboto-BoldCondensed.ttf);
-    src: url(police/roboto/Roboto-BoldCondensedItalic.ttf);
-    src: url(police/roboto/Roboto-BoldItalic.ttf);
-    src: url(police/roboto/Roboto-Condensed.ttf);
-    src: url(police/roboto/Roboto-CondensedItalic.ttf);
-    src: url(police/roboto/Roboto-Italic.ttf);
-    src: url(police/roboto/Roboto-Light.ttf);
-    src: url(police/roboto/Roboto-LightItalic.ttf);
-    src: url(police/roboto/Roboto-Medium.ttf);
-    src: url(police/roboto/Roboto-MediumItalic.ttf);
-    src: url(police/roboto/Roboto-Regular.ttf);
-    src: url(police/roboto/Roboto-Thin.ttf);
-    src: url(police/roboto/Roboto-ThinItalic.ttf);
-}
+
 /* -------------------------------POLICE SHRIKHAND------------------------------- */
 @font-face {
     font-family: shrikhand;
@@ -63,12 +44,28 @@ main{
     position: relative;
     border-radius: 30px 30px 0px 0px;
 }
-.empty{
+.empty, .full {
     font-size: 1.75rem;
     position: absolute;
     top: 35px;
-    right: 20px;
-}
+    right: 15px;
+  }
+  
+  .full {
+    display: none !important;
+    background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .like-heart:hover .empty {
+    display: none;
+  }
+  
+  .like-heart:hover .full {
+    display: unset !important;
+  }
 .menu-title{
     display: flex;
     align-items: baseline;
@@ -119,6 +116,11 @@ main h3{
 .check{
     font-size: 25px;
     color: white;
+    width: 0px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 .menu-bloc-btn{
     text-align: center;
