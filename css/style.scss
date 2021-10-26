@@ -27,11 +27,7 @@ h2 {
   width: 10rem;
 }
 
-/*
-h1{
-    font-size: 3rem;
-}
-*/
+
 .location {
   -webkit-box-shadow: inset 0px 4px 5px 1px grey;
           box-shadow: inset 0px 4px 5px 1px grey;
@@ -127,21 +123,17 @@ h1{
 }
 
 /* -------------------------------MAIN------------------------------- */
-main {
-  background-color: #fff;
+.principal{
+  background-color: #fafafa;
 }
-
 .restaurant {
   max-width: 1200px;
   margin: auto;
   padding-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 25px;
   margin-top: 20px;
 }
 
-/*.restaurant h2{
-    padding-top: 50px;
-}*/
 .result-box {
   display: -ms-grid;
   display: grid;
@@ -231,14 +223,7 @@ main {
 }
 
 /* -------------------------------FOOTER------------------------------- */
-/*footer img{
-    margin-left: 25px;
-    margin-right: auto;
-    margin-top: 25px;
-    height: 2rem;
-    width: 15rem;
-    color: #fff;
-}*/
+
 .footerlogo {
   color: #fff;
   font-family: Shrikhand, cursive;
