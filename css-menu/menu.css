@@ -65,6 +65,7 @@ main{
   
   .like-heart:hover .full {
     display: unset !important;
+    animation: full-heart 0.7s linear both;
   }
 .menu-title{
     display: flex;
@@ -102,7 +103,6 @@ main h3{
     margin: 10px;
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
     cursor: pointer;
-    /*transform: scale(1.05); :HOVER*/
 }
 /* -----------------------------------Animation slide----------------------------------- */
 .type1{animation: slide 1.5s;}
@@ -111,7 +111,8 @@ main h3{
 .type4{animation: slide 3s}
 /* -----------------------------------Annimation slide----------------------------------- */
 .type-txt{
-    margin: 10px;
+    margin-left: 10px;
+
 }
 .type-txt h4{
     margin: 0px;
@@ -196,6 +197,15 @@ footer{
     to{
         transform: translateY(0);
         opacity: 1;
+    }
+    
+}
+@keyframes full-heart {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 2;
     }
     
 }

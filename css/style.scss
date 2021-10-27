@@ -52,12 +52,17 @@ h2 {
 .explore button {
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
   border-radius: 60px 60px 60px 60px;
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
   cursor: pointer;
   color: white;
   border: none;
   font-size: 1rem;
   padding: 15px;
 }
+.explore button:hover{
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 50%);
+}
+
 
 /* -------------------------------NAV------------------------------- */
 .tuto {
@@ -435,3 +440,4 @@ footer {
     z-index: -1;
   }
 }
+
