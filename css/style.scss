@@ -225,6 +225,7 @@ h2 {
 
 .like-heart:hover .full {
   display: unset !important;
+  animation: full-heart 0.7s linear both;
 }
 
 /* -------------------------------FOOTER------------------------------- */
@@ -441,3 +442,12 @@ footer {
   }
 }
 
+@keyframes full-heart {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 2;
+  }
+  
+}
