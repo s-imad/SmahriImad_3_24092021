@@ -1,0 +1,33 @@
+@mixin option {
+    background-color: #f7f7f7;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 325px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 60px;
+      border-radius: 15px;
+      -webkit-transition-duration: 1s;
+              transition-duration: 1s; 
+}
+
+@mixin opt {
+    background-color: #9356dc;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 3px;
+        width: 25px;
+        height: 25px;
+        margin-left: -15px;
+        color: #fff;
+}

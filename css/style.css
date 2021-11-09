@@ -1,3 +1,4 @@
+/* -------------------VARIABLES------------------- */
 /* -------------------------------POLICE SHRIKHAND------------------------------- */
 @font-face {
   font-family: "shrikhand";
@@ -8,11 +9,13 @@
 body {
   margin: 0px;
   font-family: "roboto", sans-serif;
+  min-width: 350px;
 }
 
 h2 {
   font-family: "roboto-bold";
   font-weight: bold;
+  font-size: 1.6em;
 }
 
 /* -------------------------------HEADER------------------------------- */
@@ -26,7 +29,8 @@ h2 {
   width: 10rem;
 }
 
-.location {
+/* -------------------------------CONTAINER------------------------------- */
+.container .location {
   -webkit-box-shadow: inset 0px 4px 5px 1px grey;
   box-shadow: inset 0px 4px 5px 1px grey;
   text-align: center;
@@ -35,30 +39,33 @@ h2 {
   font-size: 16px;
 }
 
-.explore {
+.container .explore {
   text-align: center;
   background-color: #fafafa;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.explore p {
+.container .explore p {
   font-weight: 100;
   color: #6b6b6b;
 }
 
-.explore button {
-  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+.container .explore button {
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
   border-radius: 60px 60px 60px 60px;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   color: white;
   border: none;
   font-size: 1rem;
   padding: 15px;
 }
-.explore button:hover{
-  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 50%);
+
+.container .explore button:hover {
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* -------------------------------NAV------------------------------- */
@@ -67,7 +74,7 @@ h2 {
   margin: auto;
 }
 
-.function {
+.tuto .function {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +82,7 @@ h2 {
   justify-content: space-around;
 }
 
-.option1, .option2, .option3 {
+.tuto .function .option1, .tuto .function .option2, .tuto .function .option3 {
   background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,18 +91,17 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /*justify-content: space-between;*/
   height: 60px;
   border-radius: 15px;
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
 
-.option1:hover, .option2:hover, .option3:hover {
+.tuto .function .option1:hover, .tuto .function .option2:hover, .tuto .function .option3:hover {
   background: #f4edfe;
 }
 
-.one, .two, .three {
+.tuto .function .option1 .one, .tuto .function .option1 .two, .tuto .function .option1 .three, .tuto .function .option2 .one, .tuto .function .option2 .two, .tuto .function .option2 .three, .tuto .function .option3 .one, .tuto .function .option3 .two, .tuto .function .option3 .three {
   background-color: #9356dc;
   border-radius: 50%;
   display: -webkit-box;
@@ -114,12 +120,12 @@ h2 {
   color: #fff;
 }
 
-.font {
+.tuto .function .option1 .font, .tuto .function .option2 .font, .tuto .function .option3 .font {
   padding-left: 15px;
   color: grey;
 }
 
-.ico1, .ico2, .ico3 {
+.tuto .function .option1 .ico1, .tuto .function .option1 .ico2, .tuto .function .option1 .ico3, .tuto .function .option2 .ico1, .tuto .function .option2 .ico2, .tuto .function .option2 .ico3, .tuto .function .option3 .ico1, .tuto .function .option3 .ico2, .tuto .function .option3 .ico3 {
   font-weight: 600;
   padding-left: 10px;
 }
@@ -129,7 +135,7 @@ h2 {
   background-color: #fafafa;
 }
 
-.restaurant {
+.principal .restaurant {
   max-width: 1200px;
   margin: auto;
   padding-bottom: 50px;
@@ -140,8 +146,6 @@ h2 {
 .result-box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr [2];
-  grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 2rem;
   column-gap: 2rem;
   row-gap: 2rem;
@@ -172,7 +176,7 @@ h2 {
   width: 100%;
 }
 
-.box-txt {
+.menu .box-txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +227,8 @@ h2 {
 
 .like-heart:hover .full {
   display: unset !important;
-  animation: full-heart 0.7s linear both;
+  -webkit-animation: full-heart 0.7s linear both;
+          animation: full-heart 0.7s linear both;
 }
 
 /* -------------------------------FOOTER------------------------------- */
@@ -245,16 +250,16 @@ footer {
   flex-direction: column;
 }
 
-.footernav a {
+footer a {
   color: white;
   text-decoration: none;
 }
 
-.footernav ul {
+footer ul {
   list-style: none;
 }
 
-.footer-ico {
+footer .footer-ico {
   margin-right: 4px;
   width: 1.2rem;
 }
@@ -289,8 +294,6 @@ footer {
   .result-box {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr [1];
-    grid-template-columns: repeat(1, 1fr);
     row-gap: 2rem;
   }
 }
@@ -439,13 +442,22 @@ footer {
     z-index: -1;
   }
 }
+
+@-webkit-keyframes full-heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
 @keyframes full-heart {
-  from{
-      opacity: 0;
+  from {
+    opacity: 0;
   }
-  to{
-      opacity: 2;
+  to {
+    opacity: 2;
   }
-  
 }
 /*# sourceMappingURL=style.css.map */
