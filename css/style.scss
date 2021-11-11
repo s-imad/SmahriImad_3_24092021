@@ -16,23 +16,18 @@ body {
   min-width: 350px;
 }
 
+
+/* -------------------------------HEADER------------------------------- */
+h1{
+  font-family: Shrikhand, cursive;
+  font-size: 3rem;
+  text-align: center;
+}
 h2 {
-  font-family: "roboto-bold";
+  font-family: "roboto";
   font-weight: bold;
   font-size: 1.6em;
 }
-
-/* -------------------------------HEADER------------------------------- */
-.logo img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  height: 2rem;
-  width: 10rem;
-}
-
 /* -------------------------------CONTAINER------------------------------- */
 
 .container{
@@ -88,6 +83,9 @@ h2 {
       @include option;
       &:hover{
         background: #f4edfe;
+        .font{
+          color: #9356DC;
+        }
       }
 
       .one, .two, .three {

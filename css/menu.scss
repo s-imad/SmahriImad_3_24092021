@@ -13,27 +13,24 @@ body{
     font-family: 'Roboto', sans-serif;
     min-width: 350px;
 }
+h1{
+    font-family: Shrikhand, cursive;
+    font-size: 2rem;
+    text-align: center;
+  }
 /* -------------------HEADER------------------- */
-.header-logo{
-    display: flex;
-    align-items: center;
-
-    .return{
+.return{
         position: absolute;
         left: 10px;
+        top: 60px;
         color: inherit;
+        font-size: 23px;
     }
-
-    .logo{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 25px;
-        margin-top: 25px;
-        height: 2rem;
-        width: 10rem;
+h1{
+        font-family: Shrikhand, cursive;
+        font-size: 3rem;
+        text-align: center;
     }
-}
 .banniere-img{
     max-width: 100%;
     width: 100%;

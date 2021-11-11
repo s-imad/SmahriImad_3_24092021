@@ -12,21 +12,17 @@ body {
   min-width: 350px;
 }
 
-h2 {
-  font-family: "roboto-bold";
-  font-weight: bold;
-  font-size: 1.6em;
+/* -------------------------------HEADER------------------------------- */
+h1 {
+  font-family: Shrikhand, cursive;
+  font-size: 3rem;
+  text-align: center;
 }
 
-/* -------------------------------HEADER------------------------------- */
-.logo img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  height: 2rem;
-  width: 10rem;
+h2 {
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 1.6em;
 }
 
 /* -------------------------------CONTAINER------------------------------- */
@@ -101,6 +97,10 @@ h2 {
   background: #f4edfe;
 }
 
+.tuto .function .option1:hover .font, .tuto .function .option2:hover .font, .tuto .function .option3:hover .font {
+  color: #9356DC;
+}
+
 .tuto .function .option1 .one, .tuto .function .option1 .two, .tuto .function .option1 .three, .tuto .function .option2 .one, .tuto .function .option2 .two, .tuto .function .option2 .three, .tuto .function .option3 .one, .tuto .function .option3 .two, .tuto .function .option3 .three {
   background-color: #9356dc;
   border-radius: 50%;
@@ -146,7 +146,7 @@ h2 {
 .result-box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)(2);
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   row-gap: 2rem;
 }
@@ -294,7 +294,7 @@ footer .footer-ico {
   .result-box {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)(1);
+    -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     row-gap: 2rem;
   }
