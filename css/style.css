@@ -35,6 +35,13 @@ h2 {
   font-size: 16px;
 }
 
+.container .location .location-txt {
+  border: none;
+  background-color: #f3f3f3;
+  font-family: "roboto";
+  font-size: 16px;
+}
+
 .container .explore {
   text-align: center;
   background-color: #fafafa;
